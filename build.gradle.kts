@@ -4,8 +4,8 @@ plugins {
     id("org.jetbrains.intellij") version "1.17.4"
 }
 
-group = "com.github.qczone"
-version = "1.0.3"
+group = "com.github.asxing"
+version = "1.1.0"
 
 
 repositories {
@@ -17,7 +17,7 @@ repositories {
 intellij {
     version.set("2022.3")
     type.set("IC") // Target IDE Platform
-    pluginName.set("Switch2Cursor")
+    pluginName.set("Switch2VSCode")
     updateSinceUntilBuild.set(true)
     sameSinceUntilBuild.set(false)
 

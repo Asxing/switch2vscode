@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "switch2cursor"
+rootProject.name = "switch2vscode"
