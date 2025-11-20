@@ -1,42 +1,4 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html --><!DOCTYPE idea-plugin [
-    <!ELEMENT idea-plugin (id|name|vendor|description|depends|extensions|actions|change-notes)*>
-    <!ELEMENT id (#PCDATA)>
-    <!ELEMENT name (#PCDATA)>
-    <!ELEMENT vendor (#PCDATA)>
-    <!ATTLIST vendor
-        email CDATA #REQUIRED
-        url CDATA #REQUIRED>
-    <!ELEMENT description (#PCDATA)>
-    <!ELEMENT depends (#PCDATA)>
-    <!ELEMENT extensions (applicationService|applicationConfigurable)*>
-    <!ATTLIST extensions
-        defaultExtensionNs CDATA #REQUIRED>
-    <!ELEMENT applicationService (#PCDATA)>
-    <!ATTLIST applicationService
-        serviceImplementation CDATA #REQUIRED>
-    <!ELEMENT applicationConfigurable (#PCDATA)>
-    <!ATTLIST applicationConfigurable
-        parentId CDATA #REQUIRED
-        instance CDATA #REQUIRED
-        id CDATA #REQUIRED
-        displayName CDATA #REQUIRED>
-    <!ELEMENT actions (action)*>
-    <!ELEMENT action (add-to-group|keyboard-shortcut)*>
-    <!ATTLIST action
-        id CDATA #REQUIRED
-        class CDATA #REQUIRED
-        text CDATA #REQUIRED
-        description CDATA #REQUIRED>
-    <!ELEMENT add-to-group (#PCDATA)>
-    <!ATTLIST add-to-group
-        anchor CDATA #REQUIRED
-        group-id CDATA #REQUIRED>
-    <!ELEMENT keyboard-shortcut (#PCDATA)>
-    <!ATTLIST keyboard-shortcut
-        keymap CDATA #REQUIRED
-        first-keystroke CDATA #REQUIRED>
-    <!ELEMENT change-notes (#PCDATA)>
-    ]>
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>com.github.qczone.switch2vscode</id>
