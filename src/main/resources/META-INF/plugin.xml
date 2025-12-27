@@ -86,6 +86,7 @@
             instance="com.github.qczone.switch2vscode.settings.AppSettingsConfigurable"
             id="com.github.qczone.switch2vscode.settings.AppSettingsConfigurable"
             displayName="Switch2VSCode"/>
+
     </extensions>
 
     <actions>
@@ -94,18 +95,49 @@
             <add-to-group group-id="ToolsMenu" anchor="first"/>
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
             <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+            <!-- 设置多个keymap以确保兼容性和优先级 -->
             <keyboard-shortcut keymap="$default" first-keystroke="alt shift O"/>
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="alt shift O"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="alt shift O"/>
+            <keyboard-shortcut keymap="Eclipse (Mac OS X)" first-keystroke="alt shift O"/>
+            <keyboard-shortcut keymap="IntelliJ IDEA Classic (macOS)" first-keystroke="alt shift O"/>
         </action>
 
         <action id="OpenProjectInVSCode" class="com.github.qczone.switch2vscode.actions.OpenProjectInVSCodeAction"
             text="Open Project In VS Code" description="Open current project in VS Code">
             <add-to-group group-id="ToolsMenu" anchor="first"/>
             <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+            <!-- 设置多个keymap以确保兼容性和优先级 -->
             <keyboard-shortcut keymap="$default" first-keystroke="alt shift P"/>
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="alt shift P"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="alt shift P"/>
+            <keyboard-shortcut keymap="Eclipse (Mac OS X)" first-keystroke="alt shift P"/>
+            <keyboard-shortcut keymap="IntelliJ IDEA Classic (macOS)" first-keystroke="alt shift P"/>
         </action>
     </actions>
 
     <change-notes><![CDATA[
+        <h3>1.2.0</h3>
+        <ul>
+            <li>🚀 Enhanced Multi-Editor Support: Comprehensive discovery engine for VS Code-based editors</li>
+            <li>🎯 White-list Filtering: Only discover and display VS Code series editors (Visual Studio Code, Cursor, Windsurf, AntiGravity, CatPaw, Trae)</li>
+            <li>🔍 Smart Discovery: Automatic detection of editors through command-line and application-level scanning</li>
+            <li>✅ Improved Accuracy: Enhanced pattern matching to prevent false positives and unwanted entries</li>
+            <li>🖥️ Cross-Platform: Optimized discovery for macOS, Windows, and Linux</li>
+            <li>⚡ Better Performance: Streamlined UI with simplified discovery strategy</li>
+        </ul>
+
+        <hr/>
+
+        <ul>
+            <li>🚀 增强多编辑器支持：为 VS Code 系列编辑器提供全面的发现引擎</li>
+            <li>🎯 白名单过滤：仅发现和显示 VS Code 系列编辑器（Visual Studio Code、Cursor、Windsurf、AntiGravity、CatPaw、Trae）</li>
+            <li>🔍 智能发现：通过命令行和应用程序级扫描自动检测编辑器</li>
+            <li>✅ 提高准确性：增强模式匹配以防止误识别和不需要的条目</li>
+            <li>🖥️ 跨平台：为 macOS、Windows 和 Linux 优化发现功能</li>
+            <li>⚡ 性能优化：简化发现策略，优化用户界面</li>
+        </ul>
+
         <h3>1.1.0</h3>
         <ul>
             <li>✨ Add VS Code support for opening files and projects with caret position</li>
